@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    user-select: none;
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell img{
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.cell{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.black{
+    /* background-color: rgb(46, 135, 224); */
+    background-color: #e48f4f;
+}
+
+.white{
+    /* background: rgb(145, 145, 6); */
+    background-color: #f5cfa1;
+}
+
+
+.selected{
+    /* background-color: rgb(228, 100, 26) ; */
+    background-color: rgb(48, 201, 34) ;
+}
+
