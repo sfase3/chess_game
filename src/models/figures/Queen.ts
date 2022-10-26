@@ -12,4 +12,14 @@ import { Figure, FigureNames } from "./Figure";
         this.logo = color === Colors.BLACK ? blackLogo : whiteLogo;
         this.name = FigureNames.BISHOP
     }
+    canMove(target: Cell): boolean {
+        if(!super.canMove(target)){
+            return false;
+        }
+        if(this.cell.isEmptyVertical(target)){
+            return true
+        }
+        return true
+
+    }
  }
