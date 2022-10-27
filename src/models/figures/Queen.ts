@@ -19,7 +19,13 @@ import { Figure, FigureNames } from "./Figure";
         if(this.cell.isEmptyVertical(target)){
             return true
         }
-        return true
+        if(this.cell.isEmptyHorizontal(target)){
+            return true
+        }
+        if(this.cell.isEmptyDiagonal(target)){
+            return true
+        }
+        return false
 
     }
  }
